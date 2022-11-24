@@ -2,12 +2,20 @@
     position: absolute;
     z-index: -10;
     background-color: rgb(0, 150, 136);
-    height: 200px;
+    height: 10vh;
     top: 0;
+    width: 100%;
 }
 
 .b-color{
     background-color: rgb(219, 219, 210);
+    height: 100vh;
+    position: relative;
+}
+
+#app{
+    height: 95vh;
+    width: 85vw;
 }
 
 img{
@@ -26,6 +34,10 @@ img{
     width: 400px;
 }
 
+.right-chat{
+
+}
+
 i{
     color: rgb(177, 177, 177);
     margin-left: .5rem;
@@ -42,8 +54,8 @@ i{
 }
 
 .people{
-    height: 100vh;
     background-color: white;
+    height: ;
 }
 
 .write{
@@ -58,6 +70,5 @@ i{
 }
 
 .main-chat{
-    height: 100vh;
     background-image: url("../img/mine.jpg");
 }

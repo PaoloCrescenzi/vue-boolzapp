@@ -1,84 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>Boolzapp</title>
 </head>
-<body class="b-color">
+
+<body class="b-color d-flex align-items-center justify-content-center">
     <div class="bar-green">
 
     </div>
 
-    <div class="container app d-flex my-4">
-        <div class="left-chat flex-column">
+    <div id="app">
+        <div class="d-flex">
+            <div class="left-chat flex-column">
 
-            <div class="nav nav-users p-2 justify-content-between align-items-center">
-                <div class="left">
-                    <img src="img/avatar_io.jpg" alt="" class="rounded-circle">
-                    <span>Sofia</span>
+                <div class="nav nav-users p-2 justify-content-between align-items-center">
+                    <div class="left">
+                        <img src="img/avatar_io.jpg" alt="" class="rounded-circle">
+                        <span>Sofia</span>
+                    </div>
+                    <div class="right justify-content-center">
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
                 </div>
-                <div class="right justify-content-center">
-                    <i class="fa-solid fa-circle-notch"></i>
-                    <i class="fa-solid fa-message"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                <div class="bell bg-primary p-2 d-flex align-items-center">
+                    <i class="fa-solid fa-bell-slash text-primary bg-white p-2 rounded-circle"></i>
+                    <div class="mx-2">
+                        <div>Ricevi notifiche di nuovi messaggi</div>
+                        <a href="#" class="text-black"><small>Attiva notifiche dekstop</small></a>
+                    </div>
+                </div>
+
+                <div class="search d-flex p-1">
+                    <button class="brutton bg-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" class="flex-fill search-bar">
+                </div>
+
+                <div class="people">
+                    <div class="cards d-flex p-2">
+                        <img src="img/avatar_1.jpg" alt="" class="rounded-circle">
+                        <div class="px-2">
+                            <div>Mario</div>
+                            <small>Ultimo messaggio inviato</small>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="bell bg-primary p-2 d-flex align-items-center">
-                <i class="fa-solid fa-bell-slash text-primary bg-white p-2 rounded-circle"></i>
-                <div class="mx-2">
-                    <div>Ricevi notifiche di nuovi messaggi</div>
-                    <a href="#" class="text-black"><small>Attiva notifiche dekstop</small></a>
+            <div class="right-chat flex-fill">
+                <div class="nav-chat p-2 justify-content-between align-items-center d-flex">
+                    <div class="left">
+                        <img src="img/avatar_1.jpg" alt="" class="rounded-circle">
+                        <span>Mario</span>
+                    </div>
+
+                    <div class="right">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
                 </div>
-            </div>
 
-            <div class="search d-flex p-1">
-                <button class="brutton bg-white"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <input type="text" class="flex-fill search-bar">
-            </div>
+                <div class="main-chat">
 
-            <div class="people">
+                </div>
 
+                <div class="btmn-chat d-flex justify-content-around align-items-center p-2">
+                    <i class="fa-regular fa-face-smile"></i>
+
+                    <div>
+                        <input type="text" class="write" placeholder="Scrivi un messaggio">
+                    </div>
+
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
             </div>
         </div>
 
-        <div class="right-chat flex-fill">
-            <div class="nav-chat p-2 justify-content-between align-items-center d-flex">
-                <div class="left">
-                    <img src="img/avatar_1.jpg" alt="" class="rounded-circle">
-                    <span>Mario</span>
-                </div>
-
-                <div class="right">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-paperclip"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-
-            <div class="main-chat">
-                
-            </div>
-
-            <div class="btmn-chat d-flex justify-content-around align-items-center p-2">
-                <i class="fa-regular fa-face-smile"></i>
-
-                <div>
-                    <input type="text" class="write" placeholder="Scrivi un messaggio">
-                </div>
-
-                <i class="fa-solid fa-microphone"></i>
-            </div>
-        </div>
     </div>
     <script src="js/main.js"></script>
 </body>
+
 </html>
