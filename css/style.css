@@ -1,0 +1,63 @@
+.bar-green{
+    position: absolute;
+    z-index: -10;
+    background-color: rgb(0, 150, 136);
+    height: 200px;
+    top: 0;
+}
+
+.b-color{
+    background-color: rgb(219, 219, 210);
+}
+
+img{
+    height: 50px;
+}
+
+.nav-chat{
+    background-color: rgb(234, 234, 234);
+}
+
+.nav-users{
+    background-color: rgb(234, 234, 234);
+}
+
+.left-chat{
+    width: 400px;
+}
+
+i{
+    color: rgb(177, 177, 177);
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.search{
+    background-color: rgb(214, 214, 214);
+}
+
+.brutton{
+    border: 1px solid;
+    border-color: rgb(253, 253, 253);
+}
+
+.people{
+    height: 100vh;
+    background-color: white;
+}
+
+.write{
+    width: 800px;
+    height: 40px;
+    border-radius: 5px;
+    border: transparent;
+}
+
+.btmn-chat{
+    background-color: rgb(234, 234, 234);
+}
+
+.main-chat{
+    height: 100vh;
+    background-image: url("../img/mine.jpg");
+}
