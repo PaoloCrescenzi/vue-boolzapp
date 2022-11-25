@@ -32,6 +32,8 @@ img{
 
 .left-chat{
     width: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 .right-chat{
@@ -45,7 +47,7 @@ i{
 }
 
 .search{
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(234, 234, 234)
 }
 
 .brutton{
@@ -55,7 +57,8 @@ i{
 
 .people{
     background-color: white;
-    height: ;
+    overflow: auto;
+    flex-grow: 1;
 }
 
 .write{
@@ -71,5 +74,6 @@ i{
 
 .main-chat{
     background-image: url("../img/mine.jpg");
-    height: 90vh;
+    height: calc(100% - 66px - 56px);
 }
+
