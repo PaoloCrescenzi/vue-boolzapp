@@ -1,12 +1,23 @@
-import importeduserList from './usersList'
+import importeduserList from './usersList.js';
 
-const{createApp}= Vue;
+const { createApp } = Vue;
 
 createApp({
-    data (){
-        return{
-            usersList: importeduserList
+    data() {
+        return {
+            importeduserList,
+
+            utenteAttivo: -1,
+
+            objUtente: "",
         };
+    },
+
+    methods: {
+        utenteCliccato(i, utenteSingle) {
+            this.utenteAttivo = i,
+            this.objUtente = utenteSingle;
+        },
     },
 }).mount("#app")
 

@@ -36,9 +36,7 @@ img{
     flex-direction: column;
 }
 
-.right-chat{
 
-}
 
 i{
     color: rgb(177, 177, 177);
@@ -75,5 +73,23 @@ i{
 .main-chat{
     background-image: url("../img/mine.jpg");
     height: calc(100% - 66px - 56px);
+
+    padding: 3rem;
 }
 
+.white-chat{
+    background-color: rgb(255, 255, 255);
+    padding: .5rem;
+    max-width: 60%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.green-chat{
+    background-color: rgb(213, 249, 186);
+    padding: .5rem;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+}
